@@ -9,10 +9,10 @@
 
 
 ## original solution
-# is faulty becuase I have to initialize lowest_value that might make code 
-#break if value is greater than 1000000. 
-#Avi's solution sets default lowest value to nil and incorporates that into 
-#if condition 
+# is faulty becuase I have to initialize lowest_value that might make code
+#break if value is greater than 1000000.
+#Avi's solution sets default lowest value to nil and incorporates that into
+#if condition
 
 =begin
 MY ORIGINAL SOLUTION
@@ -32,4 +32,16 @@ def key_for_min_value(name_hash)
 end
 
 
-
+#their SOLUTION
+=end
+def key_for_min(hash_name)
+  lowest_value = nil
+  lowest_key = nil
+    name_hash.each do |key, value|
+      if lowest_value == nil || value < lowest_value
+        lowest_value = value
+        lowest_key = key
+      end
+    end
+  lowest_key
+end
