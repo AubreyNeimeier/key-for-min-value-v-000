@@ -8,6 +8,14 @@
 #return the variable outside of the hash
 
 
+## original solution
+# is faulty becuase I have to initialize lowest_value that might make code 
+#break if value is greater than 1000000. 
+#Avi's solution sets default lowest value to nil and incorporates that into 
+#if condition 
+
+=begin
+MY ORIGINAL SOLUTION
 def key_for_min_value(name_hash)
   lowest_value = 1000000
   lowest_key = nil
@@ -22,3 +30,6 @@ def key_for_min_value(name_hash)
     end
   lowest_key
 end
+
+
+
