@@ -9,7 +9,7 @@
 
 
 def key_for_min_value(name_hash)
-  smallest = 100000
+  smallest
   smallest_name = " "
     if name_hash.empty?
       return nil
