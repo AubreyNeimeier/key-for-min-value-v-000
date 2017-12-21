@@ -34,7 +34,7 @@ end
 
 #their SOLUTION
 =end
-def key_for_min(hash_name)
+def key_for_min(name_hash)
   lowest_value = nil
   lowest_key = nil
     name_hash.each do |key, value|
